@@ -30,14 +30,14 @@ html, body {
     height: 100%;
 }
 
-h1, h2, h3, h4, h5, h6 {
+h1, h2, h3, h4, h5, h6, .number, .description {
     font-family: 'Mont-SemiBold', 'sans-serif', 'Arial';
 }
 
  :root {
     background-color: #fff;
 }
-
+/* Заголовок страницы */
 header{
     background-color: #336FB7;
     color: #fff;
@@ -63,10 +63,13 @@ header h2{
     align-self: center;
     margin: 0 16%;
 }
-
+/* Основной блок */
 main{
-    text-align: center;
     margin: 50px 100px 80px;
+}
+
+.titles{
+    text-align: center;
 }
 
 main h1{
@@ -75,4 +78,32 @@ main h1{
 
 main h3 {
     margin-top: 15px;
+}
+
+/* Колонки */
+.columns{
+    display: flex;
+    flex-wrap: wrap;
+    margin: 0 50px 85px;
+    gap: 10%;
+}
+
+.columns hr{
+    margin-bottom: 10px;
+    width: 60%;
+    background-color: #AFAFAF;
+}
+
+.column {
+    flex-basis: 26.66%;
+}
+
+.number{
+    font-size: 40px;
+    color: #529977;
+    margin-top: 50px;
+}
+
+.description{
+    font-size: 20px;
 }
