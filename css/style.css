@@ -33,3 +33,30 @@ html, body {
 #root {
     background-color: #fff;
 }
+
+header{
+    background-color: #336FB7;
+    color: #fff;
+    display: flex;
+    padding: 18px 0;
+}
+
+.logo {
+    display: flex;
+    align-items: center;
+    margin-left: 100px;
+}
+
+.logo p {
+    width: 178px;
+}
+
+.logo img{
+    margin-right: 15px;
+}
+
+header h2{
+    align-self: center;
+    margin: 0 18%;
+    font-family: 'Mont-SemiBold', 'sans-serif', 'Arial';
+}
