@@ -30,7 +30,11 @@ html, body {
     height: 100%;
 }
 
-#root {
+h1, h2, h3, h4, h5, h6 {
+    font-family: 'Mont-SemiBold', 'sans-serif', 'Arial';
+}
+
+ :root {
     background-color: #fff;
 }
 
@@ -57,6 +61,18 @@ header{
 
 header h2{
     align-self: center;
-    margin: 0 18%;
-    font-family: 'Mont-SemiBold', 'sans-serif', 'Arial';
+    margin: 0 16%;
+}
+
+main{
+    text-align: center;
+    margin: 50px 100px 80px;
+}
+
+main h1{
+    font-size: 36px;
+}
+
+main h3 {
+    margin-top: 15px;
 }
