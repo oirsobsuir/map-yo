@@ -124,19 +124,16 @@ main h2 {
 
 .legend{
     display: flex;
+    flex-wrap: wrap;
     align-items: center;
     justify-content: center;
-    gap: 50px;
-    margin: 65px 90px 0;
-}
-
-.child, .average {
-    display: flex;
-    flex-direction: column;
-    gap:25px
+    gap: 5%;
+    margin: 65px 100px 0;
 }
 
 .legend-item {
     display: flex;
-    gap: 30px
+    flex-basis: 47.5%;
+    gap: 30px;
+    margin-top: 25px;
 }
