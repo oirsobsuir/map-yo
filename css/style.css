@@ -30,14 +30,16 @@ html, body {
     height: 100%;
 }
 
-h1, h2, h3, h4, h5, h6, .number, .description {
+h1, h2, h3, h4, h5, h6, header .title, .number, .description, .logo p {
     font-family: 'Mont-SemiBold', 'sans-serif', 'Arial';
 }
 
  :root {
     background-color: #fff;
 }
+
 /* Заголовок страницы */
+
 header{
     background-color: #336FB7;
     color: #fff;
@@ -59,11 +61,14 @@ header{
     margin-right: 15px;
 }
 
-header h2{
+header .title{
     align-self: center;
     margin: 0 16%;
+    font-size: 24px;
 }
+
 /* Основной блок */
+
 main{
     margin: 50px 100px 80px;
 }
@@ -76,11 +81,12 @@ main h1{
     font-size: 36px;
 }
 
-main h3 {
-    margin-top: 15px;
+main h2 {
+    margin-top: 20px;
 }
 
 /* Колонки */
+
 .columns{
     display: flex;
     flex-wrap: wrap;
