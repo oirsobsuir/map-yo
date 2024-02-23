@@ -44,13 +44,13 @@ header{
     background-color: #336FB7;
     color: #fff;
     display: flex;
-    padding: 18px 0;
+    padding: 0.9375vw 0;
 }
 
 .logo {
     display: flex;
     align-items: center;
-    margin-left: 100px;
+    margin-left: 5.2vw;
 }
 
 .logo p {
@@ -58,19 +58,19 @@ header{
 }
 
 .logo img{
-    margin-right: 15px;
+    margin-right: 0.78125vw;
 }
 
 header .title{
     align-self: center;
-    margin: 0 16%;
+    margin: 0 15.85vw;
     font-size: 24px;
 }
 
 /* Основной блок */
 
 main{
-    margin: 50px 100px 80px;
+    margin: 2.6vw 5.2vw 4.16vw;
 }
 
 .titles{
@@ -82,7 +82,7 @@ main h1{
 }
 
 main h2 {
-    margin-top: 20px;
+    margin-top: 1.04vw;
 }
 
 /* Колонки */
@@ -90,12 +90,12 @@ main h2 {
 .columns{
     display: flex;
     flex-wrap: wrap;
-    margin: 0 50px 85px;
+    margin: 0 2.6vw 4.427vw;
     gap: 10%;
 }
 
 .columns hr{
-    margin-bottom: 10px;
+    margin-bottom: 0.52vw;
     width: 60%;
     background-color: #AFAFAF;
 }
@@ -128,12 +128,12 @@ main h2 {
     align-items: center;
     justify-content: center;
     gap: 5%;
-    margin: 65px 100px 0;
+    margin: 3.385vw 5.2vw 0;
 }
 
 .legend-item {
     display: flex;
     flex-basis: 47.5%;
-    gap: 30px;
-    margin-top: 25px;
+    gap: 1.5625vw;
+    margin-top: 1.3vw;
 }
