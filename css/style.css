@@ -96,12 +96,12 @@ main h3 {
 
 .column {
     flex-basis: 26.66%;
+    margin-top: 50px;
 }
 
 .number{
     font-size: 40px;
     color: #529977;
-    margin-top: 50px;
 }
 
 .description{
@@ -112,4 +112,25 @@ main h3 {
 
 .map{
     text-align: center;
+}
+
+/* Легенда */
+
+.legend{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 50px;
+    margin: 65px 90px 0;
+}
+
+.child, .average {
+    display: flex;
+    flex-direction: column;
+    gap:25px
+}
+
+.legend-item {
+    display: flex;
+    gap: 30px
 }
