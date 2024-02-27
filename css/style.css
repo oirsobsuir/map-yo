@@ -54,7 +54,7 @@ header{
 }
 
 .logo p {
-    width: 178px;
+    max-width: 205px;
 }
 
 .logo img{
@@ -136,4 +136,45 @@ main h2 {
     flex-basis: 47.5%;
     gap: 1.5625vw;
     margin-top: 1.3vw;
+}
+
+.bel_map{
+    max-width: 1260px;
+}
+
+@media (max-width: 1402px) {
+
+    header{
+        padding: 3.25vw 0;
+    }
+
+    header .title{
+        margin: 0 1.16vw;
+        font-size: 18px;
+    }
+
+    .description{
+        font-size: 16px;
+    }
+
+    main h1{
+        font-size: 26px;
+    }
+
+    main h2{
+        font-size: 20px;
+    }
+
+    .logo p {
+        font-size: 12px;
+        max-width: 150px;
+    }
+
+    .logo {
+        margin-left: 2.6vw;
+    }
+
+    .columns{
+        margin: 0 0 4.427vw;
+    }
 }
