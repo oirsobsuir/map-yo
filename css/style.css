@@ -144,6 +144,35 @@ main h2 {
     max-height: 900px;
 }
 
+.box {
+    max-width: 420px;
+    max-height: 240px;
+    border: #AFAFAF 1px solid;
+    border-radius: 5px;
+    text-align: left;
+    font-weight: bold;
+}
+
+.box h3 {
+    margin: 1.3vw 1.3vw 0;
+
+}
+
+.value-container {
+    display: flex;
+    flex-wrap: wrap;
+    margin: 1.5625vw 1.25vw;
+    gap: 30px 10%;
+}
+
+.value-item {
+    flex-basis: 26.66%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 1.3vw;
+}
+
 .coat {
     opacity: 0;
 }
