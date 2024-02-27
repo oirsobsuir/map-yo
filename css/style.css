@@ -139,9 +139,23 @@ main h2 {
     margin-top: 1.3vw;
 }
 
-.bel_map {
-    max-width: 1260px;
+.bel_map{
+    max-width: 1000px;
+    max-height: 900px;
 }
+
+.coat {
+    display: none;
+}
+
+g:hover .ter {
+    fill: #58BE8D;
+}
+
+g:hover .coat {
+    display: block;
+}
+
 
 .copyright {
     color: var(--grey);
@@ -241,5 +255,4 @@ footer {
         gap: 8.3vw;
         margin-top: 4.45vw;
     }
-
 }
