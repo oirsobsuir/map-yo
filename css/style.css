@@ -145,15 +145,17 @@ main h2 {
 }
 
 .coat {
-    display: none;
+    opacity: 0;
 }
 
 g:hover .ter {
+    transition: 0.5s all ease;
     fill: #58BE8D;
 }
 
 g:hover .coat {
-    display: block;
+    transition: 0.5s all ease;
+    opacity: 100%;
 }
 
 
