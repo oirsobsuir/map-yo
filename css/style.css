@@ -30,7 +30,7 @@ html, body {
 
 }
 
-h1, h2, h3, h4, h5, h6, header .title, .number, .description, .logo p {
+h1, h2, h3, h4, h5, h6, header .title, .number, .description, .logo p, .back {
     font-family: 'Mont-SemiBold', 'sans-serif', 'Arial';
 }
 
@@ -119,6 +119,7 @@ main h2 {
 
 .map {
     text-align: center;
+    position: relative;
 }
 
 /* Легенда */
@@ -172,6 +173,21 @@ main h2 {
     align-items: center;
     justify-content: center;
     gap: 1.3vw;
+}
+
+.back {
+    position: absolute;
+    background: #FFCC00;
+    border-radius: 5px;
+    border: none;
+    right: 0;
+    padding: 10px 31px;
+    font-size: 18px;
+    display: none;
+}
+
+.back:hover {
+    background: #e5b503;
 }
 
 .coat {
