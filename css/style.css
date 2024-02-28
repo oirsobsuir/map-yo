@@ -145,6 +145,7 @@ main h2 {
 }
 
 .box {
+    position: absolute;
     max-width: 420px;
     max-height: 240px;
     border: #AFAFAF 1px solid;
