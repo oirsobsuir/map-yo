@@ -147,7 +147,8 @@ main h2 {
 
 .box {
     position: absolute;
-    max-width: 420px;
+    background: #fff;
+    max-width: 470px;
     max-height: 240px;
     border: #AFAFAF 1px solid;
     border-radius: 5px;
@@ -173,7 +174,15 @@ main h2 {
     display: flex;
     align-items: center;
     justify-content: center;
-    gap: 1.3vw;
+    gap: 1.2vw;
+}
+
+#title {
+    font-size: 20px;
+}
+
+.value {
+    font-size: 24px ;
 }
 
 .back {
@@ -250,6 +259,29 @@ footer {
     .columns {
         margin: 0 0 4.427vw;
     }
+
+    .box {
+        max-width: 260px;
+        max-height: 160px;
+        position: relative;
+    }
+
+    .value-container {
+        gap: 20px 5%;
+    }
+
+    .value, #title {
+        font-size: 16px ;
+    }
+
+    .value-item {
+        flex-basis: 30%;
+    }
+
+    .value-item img{
+        max-width: 24px;
+        max-height: 21px;
+    }
 }
 
 @media (max-width: 756px) {
@@ -292,6 +324,24 @@ footer {
     .column {
         flex-basis: 45%;
         margin-top: 25px;
+    }
+
+    .value, #title {
+        font-size: 12px ;
+    }
+
+    .box {
+        max-width: 170px;
+        max-height: 100px;
+    }
+
+    .value-container {
+        gap: 15px 2%;
+    }
+
+    .value-item img{
+        max-width: 18px;
+        max-height: 16px;
     }
 
     .legend {
