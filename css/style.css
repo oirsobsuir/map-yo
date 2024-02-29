@@ -19,6 +19,11 @@
     font-display: swap;
 }
 
+:root {
+    background-color: #fff;
+    --grey: #AFAFAF;
+}
+
 * {
     margin: 0;
     padding: 0;
@@ -34,9 +39,14 @@ h1, h2, h3, h4, h5, h6, header .title, .number, .description, .logo p, .back, .v
     font-family: 'Mont-SemiBold', 'sans-serif', 'Arial';
 }
 
-:root {
-    background-color: #fff;
-    --grey: #AFAFAF;
+.container {
+    max-width: 1860px;
+    margin: 0 auto;
+    padding: 0 4vw;
+}
+
+.d-flex {
+    display: flex;
 }
 
 /* Заголовок страницы */
@@ -44,14 +54,12 @@ h1, h2, h3, h4, h5, h6, header .title, .number, .description, .logo p, .back, .v
 header {
     background-color: #336FB7;
     color: #fff;
-    display: flex;
-    padding: 0.9375vw 0;
+    padding: 0.97vw 0;
 }
 
 .logo {
     display: flex;
     align-items: center;
-    margin-left: 5.2vw;
 }
 
 .logo p {
@@ -64,7 +72,10 @@ header {
 
 header .title {
     align-self: center;
+    margin: 0 4vw;
+    /*
     margin: 0 13.85vw;
+    */
     font-size: 24px;
 }
 
@@ -80,10 +91,11 @@ main {
 
 main h1 {
     font-size: 36px;
+    margin-top: 30px;
 }
 
 main h2 {
-    margin-top: 1.04vw;
+    margin-top: 1.8vw;
 }
 
 /* Колонки */
@@ -91,7 +103,7 @@ main h2 {
 .columns {
     display: flex;
     flex-wrap: wrap;
-    margin: 0 2.6vw 4.427vw;
+    margin: 0 0 4.427vw;
     gap: 10%;
 }
 
@@ -107,7 +119,7 @@ main h2 {
 }
 
 .number {
-    font-size: 40px;
+    font-size: 45px;
     color: #529977;
 }
 
@@ -130,7 +142,7 @@ main h2 {
     align-items: center;
     justify-content: center;
     gap: 5%;
-    margin: 3.385vw 5.2vw 0;
+    margin: 3.385vw 5.2vw;
 }
 
 .legend-item {
@@ -144,9 +156,9 @@ main h2 {
     display: none;
 }
 
-.bel_map{
-    max-width: 1000px;
-    max-height: 900px;
+.bel_map {
+    max-width: 90vw;
+    max-height: 99vh;
     display: inline-block !important;
 }
 
@@ -160,18 +172,19 @@ main h2 {
     text-align: left;
     font-weight: bold;
     display: none;
+    padding: 20px 25px;
 }
 
-.box h3 {
-    margin: 1.3vw 1.3vw 0;
-
+.box-title {
+    font-size: 22px;
+    margin-bottom: 20px;
+    font-family: 'Mont-SemiBold';
 }
 
 .value-container {
     display: flex;
     flex-wrap: wrap;
-    margin: 1.5625vw 1.25vw;
-    gap: 30px 10%;
+    gap: 30px;
 }
 
 .value-item {
@@ -182,12 +195,8 @@ main h2 {
     gap: 1.2vw;
 }
 
-#title {
-    font-size: 20px;
-}
-
 .value {
-    font-size: 24px ;
+    font-size: 24px;
 }
 
 .back {
@@ -224,8 +233,9 @@ g:hover .coat {
     color: var(--grey);
 }
 
-footer {
-    margin: 0 10.4vw 20px;
+.footer {
+    padding-bottom: 20px;
+    text-align: center;
 }
 
 @media (max-width: 1402px) {
@@ -275,14 +285,14 @@ footer {
     }
 
     .value, #title {
-        font-size: 16px ;
+        font-size: 16px;
     }
 
     .value-item {
         flex-basis: 30%;
     }
 
-    .value-item img{
+    .value-item img {
         max-width: 24px;
         max-height: 21px;
     }
@@ -331,7 +341,7 @@ footer {
     }
 
     .value, #title {
-        font-size: 12px ;
+        font-size: 12px;
     }
 
     .box {
@@ -343,7 +353,7 @@ footer {
         gap: 15px 2%;
     }
 
-    .value-item img{
+    .value-item img {
         max-width: 18px;
         max-height: 16px;
     }
