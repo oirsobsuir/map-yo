@@ -223,6 +223,9 @@ footer {
     margin: 0 10.4vw 20px;
 }
 
+.minsk {
+    display: none;
+}
 
 @media (max-width: 1402px) {
 
