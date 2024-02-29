@@ -140,9 +140,14 @@ main h2 {
     margin-top: 1.3vw;
 }
 
+.map svg {
+    display: none;
+}
+
 .bel_map{
     max-width: 1000px;
     max-height: 900px;
+    display: inline-block !important;
 }
 
 .box {
@@ -221,10 +226,6 @@ g:hover .coat {
 
 footer {
     margin: 0 10.4vw 20px;
-}
-
-.minsk {
-    display: none;
 }
 
 @media (max-width: 1402px) {
