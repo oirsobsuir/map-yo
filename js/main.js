@@ -17,7 +17,6 @@ async function fetchData() {
     let box = document.getElementsByClassName('box')[0];
     let values = document.getElementsByClassName('value');
     let numbers = document.getElementsByClassName('number');
-    let minsk = document.getElementsByClassName('minsk')[0];
     let rb = document.getElementsByClassName('rb')[0];
 
 
@@ -33,7 +32,11 @@ async function fetchData() {
         for (let item of blocks) {
             item.addEventListener("mouseover", function () {
                 box.style.display = 'block'
-                item.id === '6' ? title.textContent = 'город ' + data[item.id].name : title.textContent = data[item.id].name + ' область'
+                if(currentMainObj === country){
+                    item.id === '6' ? title.textContent = 'город ' + data[item.id].name : title.textContent = data[item.id].name + ' область'
+                } else {
+                    title.textContent = data[item.id].name + ' район'
+                }
                 for (let i = 0; i < values.length; i++) {
                     values[i].textContent = data[item.id]['n' + (i + 1)]
                 }
@@ -42,17 +45,14 @@ async function fetchData() {
             item.addEventListener("mouseout", function () {
                 box.style.display = 'none'
             });
-            console.log(currentMainObj.id)
             currentMainObj.id === 'r1' && item.addEventListener("click", function (event) {
                 if (item.contains(event.target) && checky === item) {
                     clickCount++;
                     if (clickCount === 2) {
-                        currentMainObj = data[item.id]
-                        data = currentMainObj.cities;
                         item.parentNode.classList.remove("bel_map");
-                        minsk.classList.add("bel_map");
+                        document.querySelectorAll(`.map svg`)[+item.id + 1].classList.add("bel_map")
                         let newHoverElement = document.querySelectorAll(".bel_map g");
-                        showSettlementInfo(currentMainObj, newHoverElement, data);
+                        showSettlementInfo(data[item.id], newHoverElement, data[item.id].cities);
                         clickCount = 0;
                     }
                 } else {
@@ -64,7 +64,7 @@ async function fetchData() {
         }
     }
     back_button.addEventListener("click",  function() {
-        minsk.classList.remove("bel_map");
+        document.querySelector(`.bel_map`).classList.remove("bel_map");
         rb.classList.add("bel_map");
         showSettlementInfo(country, hoverElement, obls)
     })
