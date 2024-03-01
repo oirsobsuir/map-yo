@@ -39,6 +39,10 @@ h1, h2, h3, h4, h5, h6, header .title, .number, .description, .logo p, .back, .v
     font-family: 'Mont-SemiBold', 'sans-serif', 'Arial';
 }
 
+svg {
+    user-select: none;
+}
+
 .container {
     max-width: 1860px;
     margin: 0 auto;
@@ -218,6 +222,10 @@ main h2 {
     opacity: 0;
 }
 
+.box:hover{
+    display: block;
+}
+
 g:hover .ter {
     transition: 0.5s all ease;
     fill: #58BE8D;
@@ -277,7 +285,6 @@ g:hover .coat {
     .box {
         max-width: 260px;
         max-height: 160px;
-        position: relative;
     }
 
     .value-container {
@@ -347,6 +354,11 @@ g:hover .coat {
     .box {
         max-width: 170px;
         max-height: 100px;
+        position: relative;
+    }
+
+    .back {
+        position: relative;
     }
 
     .value-container {
@@ -360,7 +372,7 @@ g:hover .coat {
 
     .legend {
         gap: 0;
-        margin: 14.7vw 5.2vw 0;
+        margin: 14.7vw 5.2vw;
     }
 
     .legend-item {

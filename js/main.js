@@ -18,12 +18,19 @@ async function fetchData() {
     let values = document.getElementsByClassName('value');
     let numbers = document.getElementsByClassName('number');
     let rb = document.getElementsByClassName('rb')[0];
-
+    let mainTitle = document.querySelector('.titles h2')
 
     function showSettlementInfo (currentMainObj, blocks, data) {
         let checky
         back_button.style.display =  currentMainObj === country ? 'none' : 'block'
 
+        if(currentMainObj === country) {
+            mainTitle.textContent = 'По всей Республике'
+        } else if(currentMainObj === obls[6]) {
+            mainTitle.textContent = 'По городу Минску'
+        } else {
+            mainTitle.textContent = `По ${currentMainObj.name.slice(0, currentMainObj.name.length - 2)}ой области`
+        }
 
         for (let i = 0; i < numbers.length; i++) {
             numbers[i].textContent = currentMainObj['n' + (i + 1)]
@@ -42,9 +49,11 @@ async function fetchData() {
                 }
             });
 
-            item.addEventListener("mouseout", function () {
+            item.addEventListener("mouseout", function (event) {
+                if(event.relatedTarget !== box)
                 box.style.display = 'none'
             });
+
             currentMainObj.id === 'r1' && item.addEventListener("click", function (event) {
                 if (item.contains(event.target) && checky === item) {
                     clickCount++;
