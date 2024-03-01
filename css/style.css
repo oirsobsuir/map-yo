@@ -35,7 +35,7 @@ html, body {
 
 }
 
-h1, h2, h3, h4, h5, h6, header .title, .number, .description, .logo p, .back, .value {
+h1, h2, h3, h4, h5, h6, header .title, .number, .description, .logo p, .back, .value, .box-title {
     font-family: 'Mont-SemiBold', 'sans-serif', 'Arial';
 }
 
@@ -47,9 +47,6 @@ svg {
     max-width: 1860px;
     margin: 0 auto;
     padding: 0 4vw;
-}
-
-.d-flex {
     display: flex;
 }
 
@@ -182,7 +179,6 @@ main h2 {
 .box-title {
     font-size: 22px;
     margin-bottom: 20px;
-    font-family: 'Mont-SemiBold';
 }
 
 .value-container {
@@ -212,6 +208,7 @@ main h2 {
     padding: 10px 31px;
     font-size: 18px;
     display: none;
+    margin-left: auto;
 }
 
 .back:hover {
@@ -282,9 +279,16 @@ g:hover .coat {
         margin: 0 0 4.427vw;
     }
 
+    .elem-container{
+        display: flex;
+        align-items: start;
+    }
+
     .box {
         max-width: 260px;
         max-height: 160px;
+        padding: 10px 15px;
+        margin-right: auto;
     }
 
     .value-container {
@@ -355,6 +359,7 @@ g:hover .coat {
         max-width: 170px;
         max-height: 100px;
         position: relative;
+        padding: 5px 8px;
     }
 
     .back {
