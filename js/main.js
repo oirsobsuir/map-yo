@@ -63,13 +63,14 @@ async function fetchData() {
                 }
             });
 
-            currentMainObj.id === 'r1' && item.addEventListener("click", function (event) {
+            currentMainObj.id === 'r1' && item.addEventListener("click", function clickHandler(event) {
                 if (item.contains(event.target) && checky === item) {
                     clickCount++;
                     if (clickCount === 2) {
                         item.parentNode.classList.remove("bel_map");
                         document.querySelectorAll(`.map svg`)[+item.id + 1].classList.add("bel_map")
                         let newHoverElement = document.querySelectorAll(".bel_map g");
+                        item.removeEventListener("click", clickHandler, false)
                         showSettlementInfo(data[item.id], newHoverElement, data[item.id].cities);
                         clickCount = 0;
                     }
@@ -77,7 +78,7 @@ async function fetchData() {
                     checky = item
                     clickCount = 1;
                 }
-
+                
             });
         }
     }

@@ -371,6 +371,10 @@ g:hover .coat {
         padding: 5px 8px;
     }
 
+    .elem-container{
+        height: 100px;
+    }
+
     .back {
         position: relative;
         padding: 8px 20px;
