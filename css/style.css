@@ -32,7 +32,7 @@
 }
 
 html, body {
-
+    overflow-x: hidden;
 }
 
 h1, h2, h3, h4, h5, h6, header .title, .number, .description, .logo p, .back, .value, .box-title {
@@ -274,8 +274,13 @@ g:hover .coat {
         max-width: 150px;
     }
 
+    .logo img{
+        width: 49px;
+        height: 49px;
+    }
+
     .logo {
-        margin-left: 2.6vw;
+        margin-left: 0;
     }
 
     .columns {
@@ -312,8 +317,12 @@ g:hover .coat {
     }
 }
 
-@media (max-width: 756px) {
+@media (max-width: 758px) {
 
+    .d-flex {
+        flex-direction: column;
+        gap: 10px;
+    }
     header {
         padding: 3.33vw 0;
         flex-direction: column;
@@ -321,7 +330,8 @@ g:hover .coat {
     }
 
     header .title {
-        margin: 0 4.16vw;
+        margin: 0;
+        align-self: start;
         font-size: 20px;
     }
 
@@ -345,10 +355,6 @@ g:hover .coat {
         font-size: 15px;
     }
 
-    .logo {
-        margin-left: 4.16vw;
-    }
-
     .column {
         flex-basis: 45%;
         margin-top: 25px;
@@ -367,6 +373,8 @@ g:hover .coat {
 
     .back {
         position: relative;
+        padding: 8px 20px;
+        font-size: 14px;
     }
 
     .value-container {
