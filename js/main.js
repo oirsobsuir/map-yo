@@ -49,9 +49,18 @@ async function fetchData() {
                 }
             });
 
-            item.addEventListener("mouseout", function (event) {
-                if(event.relatedTarget !== box)
-                box.style.display = 'none'
+            item.addEventListener("mouseleave", function (event) {
+                let targetElement = event.relatedTarget;
+                if (targetElement !== box && !box.contains(targetElement)) {
+                    box.style.display = 'none';
+                }
+            });
+            
+            box.addEventListener("mouseleave", function (event) {
+                let targetElement = event.relatedTarget;
+                if (targetElement !== item && !item.contains(targetElement)) {
+                    box.style.display = 'none';
+                }
             });
 
             currentMainObj.id === 'r1' && item.addEventListener("click", function (event) {
