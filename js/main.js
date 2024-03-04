@@ -1,4 +1,5 @@
 let jsonData;
+let clickC= 0;
 
 async function fetchData() {
     try {
@@ -71,18 +72,18 @@ async function fetchData() {
 
             currentMainObj.id === 'r1' && item.addEventListener("click", function clickHandler(event) {
                 if (item.contains(event.target) && checky === item) {
-                    clickCount++;
-                    if (clickCount === 2) {
+                    if (clickCount + 1 === clickC) {
                         document.querySelector(`.bel_map`).classList.remove("bel_map");
                         document.querySelectorAll(`.map svg`)[+item.id + 1].classList.add("bel_map")
                         let newHoverElement = document.querySelectorAll(".bel_map g");
                         box.style.display = 'none';
                         showSettlementInfo(data[item.id], newHoverElement, data[item.id].cities);
-                        clickCount = 0;
+
                     }
+                    clickCount = clickC;
                 } else {
                     checky = item
-                    clickCount = 1;
+                    clickCount = clickC;
                 }
             });
         }
@@ -97,6 +98,8 @@ async function fetchData() {
     showSettlementInfo(country, hoverElement, obls)
 }
 
-
+document.addEventListener('click', function(event) {
+    clickC++;
+});
 
 fetchData();
