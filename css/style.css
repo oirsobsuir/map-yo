@@ -154,6 +154,7 @@ main h2 {
     flex-basis: 47.5%;
     gap: 1.5625vw;
     margin-top: 1.3vw;
+    align-items: center;
 }
 
 .map svg {
@@ -231,6 +232,10 @@ g:hover .ter {
     fill: #58BE8D;
 }
 
+g:hover .box, .box:hover {
+    display: block;
+}
+
 g:hover .coat {
     transition: 0.5s all ease;
     opacity: 100%;
@@ -297,6 +302,10 @@ g:hover .coat {
         max-height: 160px;
         padding: 10px 15px;
         margin-right: auto;
+    }
+
+    .elem-container{
+        height: 160px;
     }
 
     .value-container {
@@ -399,5 +408,10 @@ g:hover .coat {
         flex-basis: 100%;
         gap: 8.3vw;
         margin-top: 4.45vw;
+    }
+
+    .legend-item img {
+        max-width: 35px;
+        max-height: 38px;
     }
 }
