@@ -49,7 +49,7 @@ svg {
     padding: 0 4vw;
 }
 
-.d-flex{
+.d-flex {
     display: flex;
 }
 
@@ -195,8 +195,13 @@ main h2 {
     flex-basis: 26.66%;
     display: flex;
     align-items: center;
-    justify-content: center;
+    justify-content: start;
     gap: 1.2vw;
+}
+
+.value-item img {
+    height: 46px;
+    width: 42px;
 }
 
 .value {
@@ -223,24 +228,9 @@ main h2 {
     opacity: 0;
 }
 
-.box:hover{
+.box:hover {
     display: block;
 }
-
-g:hover .ter {
-    transition: 0.5s all ease;
-    fill: #58BE8D;
-}
-
-g:hover .box, .box:hover {
-    display: block;
-}
-
-g:hover .coat {
-    transition: 0.5s all ease;
-    opacity: 100%;
-}
-
 
 .copyright {
     color: var(--grey);
@@ -279,7 +269,7 @@ g:hover .coat {
         max-width: 150px;
     }
 
-    .logo img{
+    .logo img {
         width: 49px;
         height: 49px;
     }
@@ -292,7 +282,7 @@ g:hover .coat {
         margin: 0 0 4.427vw;
     }
 
-    .elem-container{
+    .elem-container {
         display: flex;
         align-items: start;
     }
@@ -304,7 +294,7 @@ g:hover .coat {
         margin-right: auto;
     }
 
-    .elem-container{
+    .elem-container {
         height: 160px;
     }
 
@@ -321,8 +311,8 @@ g:hover .coat {
     }
 
     .value-item img {
-        max-width: 24px;
-        max-height: 21px;
+        width: 24px;
+        height: 21px;
     }
 }
 
@@ -332,6 +322,7 @@ g:hover .coat {
         flex-direction: column;
         gap: 10px;
     }
+
     header {
         padding: 3.33vw 0;
         flex-direction: column;
@@ -364,6 +355,10 @@ g:hover .coat {
         font-size: 15px;
     }
 
+    .columns {
+        gap: 4%;
+    }
+
     .column {
         flex-basis: 45%;
         margin-top: 25px;
@@ -380,7 +375,7 @@ g:hover .coat {
         padding: 5px 8px;
     }
 
-    .elem-container{
+    .elem-container {
         height: 100px;
     }
 
@@ -395,8 +390,8 @@ g:hover .coat {
     }
 
     .value-item img {
-        max-width: 18px;
-        max-height: 16px;
+        width: 18px;
+        height: 16px;
     }
 
     .legend {
