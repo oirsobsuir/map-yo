@@ -180,7 +180,7 @@ g:hover .coat {
 .box {
     position: absolute;
     background: #fff;
-    max-width: 470px;
+    max-width: 446px;
     max-height: 240px;
     border: #AFAFAF 1px solid;
     border-radius: 5px;
@@ -198,7 +198,7 @@ g:hover .coat {
 .value-container {
     display: flex;
     flex-wrap: wrap;
-    gap: 30px;
+    gap: 30px 10%;
 }
 
 .value-item {
@@ -206,7 +206,7 @@ g:hover .coat {
     display: flex;
     align-items: center;
     justify-content: start;
-    gap: 1.2vw;
+    gap: 1.1vw;
 }
 
 .value-item img {
@@ -303,7 +303,7 @@ g:hover .coat {
     }
 
     .box {
-        max-width: 260px;
+        max-width: 250px;
         max-height: 160px;
         padding: 10px 15px;
         margin-right: auto;
@@ -378,6 +378,8 @@ g:hover .coat {
 
     .columns {
         gap: 4%;
+        align-items: center;
+        justify-content: center;
     }
 
     .column {
@@ -390,7 +392,7 @@ g:hover .coat {
     }
 
     .box {
-        max-width: 170px;
+        max-width: 180px;
         max-height: 100px;
         position: relative;
         padding: 5px 8px;
