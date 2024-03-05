@@ -183,7 +183,7 @@ g:hover .coat {
     top: 0;
     transition: transform 0.3s ease;
     background: #fff;
-    max-width: 446px;
+    max-width: 450px;
     max-height: 240px;
     border: #AFAFAF 1px solid;
     border-radius: 5px;
