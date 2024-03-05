@@ -110,3 +110,21 @@ document.addEventListener('click', function (event) {
 });
 
 fetchData();
+
+let container = document.querySelector('.map');
+let content = document.querySelector('.elem-container');
+
+function updateContentPosition() {
+    let containerRect = container.getBoundingClientRect();
+    let scrollTop = window.pageYOffset || document.documentElement.scrollTop;
+    let containerTop = containerRect.top + scrollTop;
+    let scrollPosition = scrollTop - containerTop;
+
+    if (scrollPosition > 0) {
+        content.style.transform = 'translateY(' + scrollPosition + 'px)';
+    } else {
+        content.style.transform = 'none';
+    }
+}
+
+window.addEventListener('scroll', updateContentPosition);
