@@ -145,7 +145,7 @@ main h2 {
     flex-wrap: wrap;
     align-items: center;
     justify-content: center;
-    gap: 5%;
+    gap: 1.3vw 5%;
     margin: 3.385vw 5.2vw;
 }
 
@@ -153,7 +153,6 @@ main h2 {
     display: flex;
     flex-basis: 47.5%;
     gap: 1.5625vw;
-    margin-top: 1.3vw;
     align-items: center;
 }
 
@@ -211,8 +210,8 @@ g:hover .coat {
 }
 
 .value-item img {
-    height: 46px;
-    width: 42px;
+    max-height: 46px;
+    max-width: 46px;
 }
 
 .value {
@@ -250,6 +249,11 @@ g:hover .coat {
 .footer {
     padding-bottom: 20px;
     text-align: center;
+}
+
+.legend-item img {
+    max-width: 46px;
+    max-height: 46px;
 }
 
 @media (max-width: 1402px) {
@@ -322,9 +326,15 @@ g:hover .coat {
     }
 
     .value-item img {
-        width: 24px;
-        height: 21px;
+        max-width: 25px;
+        max-height: 25px;
     }
+
+    .legend-item img {
+        max-width: 42px;
+        max-height: 42px;
+    }
+
 }
 
 @media (max-width: 758px) {
@@ -401,19 +411,18 @@ g:hover .coat {
     }
 
     .value-item img {
-        width: 18px;
-        height: 16px;
+        max-width: 19px;
+        max-height: 19px;
     }
 
     .legend {
-        gap: 0;
-        margin: 14.7vw 5.2vw;
+        gap: 4.45vw 0;
+        margin: 10.7vw 5.2vw;
     }
 
     .legend-item {
         flex-basis: 100%;
         gap: 8.3vw;
-        margin-top: 4.45vw;
     }
 
     .legend-item img {
