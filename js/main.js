@@ -48,18 +48,12 @@ async function fetchData() {
                 box.style.display = 'block'
                 if (currentMainObj === country) {
                     item.id === '6' ? title.textContent = 'город ' + data[item.id].name : title.textContent = data[item.id].name + ' область'
-                } else if (item.id === 'm') {
-                    title.textContent = 'город ' + obls[6].name
                 } else {
                     title.textContent = data[item.id].name + ' район'
                 }
 
                 for (let i = 0; i < values.length; i++) {
-                    if (item.id === 'm') {
-                        values[i].textContent = obls[6]['n' + (i + 1)]
-                    } else {
-                        values[i].textContent = data[item.id]['n' + (i + 1)]
-                    }
+                    values[i].textContent = data[item.id]['n' + (i + 1)]
                 }
             });
 

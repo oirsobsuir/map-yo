@@ -123,8 +123,7 @@ main h2 {
 }
 
 .number {
-    font-size: 45px;
-    color: #529977;
+    font-size: 30px;
 }
 
 .description {
@@ -137,24 +136,6 @@ main h2 {
     text-align: center;
     position: relative;
     overflow: hidden;
-}
-
-/* Легенда */
-
-.legend {
-    display: flex;
-    flex-wrap: wrap;
-    align-items: center;
-    justify-content: center;
-    gap: 1.3vw 5%;
-    margin: 3.385vw 5.2vw;
-}
-
-.legend-item {
-    display: flex;
-    flex-basis: 47.5%;
-    gap: 1.5625vw;
-    align-items: center;
 }
 
 .map svg {
@@ -179,11 +160,11 @@ g:hover .coat {
 
 
 .box {
-    position: sticky;
+    position: absolute;
     top: 0;
     transition: transform 0.3s ease;
     background: #fff;
-    max-width: 450px;
+    max-width: 446px;
     max-height: 240px;
     border: #AFAFAF 1px solid;
     border-radius: 5px;
@@ -245,6 +226,24 @@ g:hover .coat {
     display: block;
 }
 
+.info {
+    display: flex;
+    gap: 20px;
+    margin-bottom: 5px;
+    align-items: center;
+}
+
+.elem-container {
+    display: flex;
+    height: 160px;
+    align-items: end;
+}
+
+.icons {
+    max-width: 45px;
+    max-height: 45px;
+}
+
 .copyright {
     color: var(--grey);
 }
@@ -254,34 +253,7 @@ g:hover .coat {
     text-align: center;
 }
 
-.legend-item img {
-    max-width: 46px;
-    max-height: 46px;
-}
-
-.elem-container {
-    display: flex;
-    align-items: start;
-    height: 210px;
-}
-
 @media (max-width: 1402px) {
-
-    .column:nth-child(2) {
-        order: 1; /* Порядок 4-го блока изменяется на 2 */
-    }
-
-    .column:nth-child(3) {
-        order: 2; /* Порядок 4-го блока изменяется на 2 */
-    }
-
-    .column:nth-child(5) {
-        order: 1; /* Порядок 4-го блока изменяется на 2 */
-    }
-
-    .column:nth-child(6) {
-        order: 2; /* Порядок 4-го блока изменяется на 2 */
-    }
 
     header {
         padding: 3.25vw 0;
@@ -350,14 +322,34 @@ g:hover .coat {
         max-height: 25px;
     }
 
-    .legend-item img {
-        max-width: 42px;
-        max-height: 42px;
-    }
-
 }
 
 @media (max-width: 758px) {
+
+    .column:nth-child(2) {
+        order: 1; /* Порядок 4-го блока изменяется на 2 */
+    }
+
+    .column:nth-child(3) {
+        order: 2; /* Порядок 4-го блока изменяется на 2 */
+    }
+
+    .column:nth-child(5) {
+        order: 1; /* Порядок 4-го блока изменяется на 2 */
+    }
+
+    .column:nth-child(6) {
+        order: 2; /* Порядок 4-го блока изменяется на 2 */
+    }
+
+    .info {
+        gap: 10px;
+    }
+
+    .icons {
+        max-width: 35px;
+        max-height: 35px;
+    }
 
     .d-flex {
         flex-direction: column;
@@ -381,7 +373,7 @@ g:hover .coat {
     }
 
     .number {
-        font-size: 32px;
+        font-size: 24px;
     }
 
     main {
@@ -434,21 +426,6 @@ g:hover .coat {
     .value-item img {
         max-width: 19px;
         max-height: 19px;
-    }
-
-    .legend {
-        gap: 4.45vw 0;
-        margin: 10.7vw 5.2vw;
-    }
-
-    .legend-item {
-        flex-basis: 100%;
-        gap: 8.3vw;
-    }
-
-    .legend-item img {
-        max-width: 35px;
-        max-height: 38px;
     }
 
     .footer {
