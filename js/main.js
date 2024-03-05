@@ -112,7 +112,7 @@ document.addEventListener('click', function (event) {
 fetchData();
 
 let container = document.querySelector('.map');
-let content = document.querySelector('.elem-container');
+let content = document.querySelector('.box');
 
 function updateContentPosition() {
     let containerRect = container.getBoundingClientRect();

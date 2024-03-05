@@ -179,7 +179,9 @@ g:hover .coat {
 
 
 .box {
-    position: absolute;
+    position: sticky;
+    top: 0;
+    transition: transform 0.3s ease;
     background: #fff;
     max-width: 446px;
     max-height: 240px;
@@ -261,9 +263,6 @@ g:hover .coat {
     display: flex;
     align-items: start;
     height: 210px;
-    position: sticky;
-    top: 0;
-    transition: transform 0.3s ease;
 }
 
 @media (max-width: 1402px) {
@@ -415,7 +414,6 @@ g:hover .coat {
     .box {
         max-width: 180px;
         max-height: 100px;
-        position: relative;
         padding: 5px 8px;
     }
 
