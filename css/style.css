@@ -167,6 +167,17 @@ main h2 {
     display: inline-block !important;
 }
 
+g:hover .ter {
+    transition: 0.5s all ease;
+    fill: #58BE8D;
+}
+
+g:hover .coat {
+    transition: 0.5s all ease;
+    opacity: 100%;
+}
+
+
 .box {
     position: absolute;
     background: #fff;
