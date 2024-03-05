@@ -1,5 +1,5 @@
 let jsonData;
-let clickC= 0;
+let clickC = 0;
 
 async function fetchData() {
     try {
@@ -21,13 +21,13 @@ async function fetchData() {
     let mainTitle = document.querySelector('.titles h2')
     let back_button = document.getElementsByClassName('back')[0];
 
-    function showValues (currentMainObj) {
+    function showValues(currentMainObj) {
 
-        back_button.style.display =  currentMainObj === country ? 'none' : 'block'
+        back_button.style.display = currentMainObj === country ? 'none' : 'block'
 
-        if(currentMainObj === country) {
+        if (currentMainObj === country) {
             mainTitle.textContent = 'По всей Республике'
-        } else if(currentMainObj === obls[6]) {
+        } else if (currentMainObj === obls[6]) {
             mainTitle.textContent = 'По городу Минску'
         } else {
             mainTitle.textContent = `По ${currentMainObj.name.slice(0, currentMainObj.name.length - 2)}ой области`
@@ -38,7 +38,7 @@ async function fetchData() {
         }
     }
 
-    function showSettlementInfo (currentMainObj, blocks, data) {
+    function showSettlementInfo(currentMainObj, blocks, data) {
         let checky
 
         showValues(currentMainObj)
@@ -46,13 +46,20 @@ async function fetchData() {
         for (let item of blocks) {
             item.addEventListener("mouseover", function () {
                 box.style.display = 'block'
-                if(currentMainObj === country){
+                if (currentMainObj === country) {
                     item.id === '6' ? title.textContent = 'город ' + data[item.id].name : title.textContent = data[item.id].name + ' область'
+                } else if (item.id === 'm') {
+                    title.textContent = 'город ' + obls[6].name
                 } else {
                     title.textContent = data[item.id].name + ' район'
                 }
+
                 for (let i = 0; i < values.length; i++) {
-                    values[i].textContent = data[item.id]['n' + (i + 1)]
+                    if (item.id === 'm') {
+                        values[i].textContent = obls[6]['n' + (i + 1)]
+                    } else {
+                        values[i].textContent = data[item.id]['n' + (i + 1)]
+                    }
                 }
             });
 
@@ -62,7 +69,7 @@ async function fetchData() {
                     box.style.display = 'none';
                 }
             });
-            
+
             box.addEventListener("mouseleave", function (event) {
                 let targetElement = event.relatedTarget;
                 if (targetElement !== item && !item.contains(targetElement)) {
@@ -89,7 +96,7 @@ async function fetchData() {
         }
     }
 
-    back_button.addEventListener("click",  function() {
+    back_button.addEventListener("click", function () {
         document.querySelector(`.bel_map`).classList.remove("bel_map");
         rb.classList.add("bel_map");
         showValues(country)
@@ -98,7 +105,7 @@ async function fetchData() {
     showSettlementInfo(country, hoverElement, obls)
 }
 
-document.addEventListener('click', function(event) {
+document.addEventListener('click', function (event) {
     clickC++;
 });
 
