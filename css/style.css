@@ -450,4 +450,9 @@ g:hover .coat {
         max-width: 35px;
         max-height: 38px;
     }
+
+    .footer {
+        padding-bottom: 5px;
+        font-size: 12px;
+    }
 }
