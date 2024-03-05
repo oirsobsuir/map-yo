@@ -268,6 +268,22 @@ g:hover .coat {
 
 @media (max-width: 1402px) {
 
+    .column:nth-child(2) {
+        order: 1; /* Порядок 4-го блока изменяется на 2 */
+    }
+
+    .column:nth-child(3) {
+        order: 2; /* Порядок 4-го блока изменяется на 2 */
+    }
+
+    .column:nth-child(5) {
+        order: 1; /* Порядок 4-го блока изменяется на 2 */
+    }
+
+    .column:nth-child(6) {
+        order: 2; /* Порядок 4-го блока изменяется на 2 */
+    }
+
     header {
         padding: 3.25vw 0;
     }
