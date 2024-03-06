@@ -31,11 +31,24 @@
     font-family: 'Mont-Regular', 'sans-serif', 'Arial';
 }
 
-html, body {
+html,
+body {
     overflow-x: hidden;
 }
 
-h1, h2, h3, h4, h5, h6, header .title, .number, .description, .logo p, .back, .value, .box-title {
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+header .title,
+.number,
+.description,
+.logo p,
+.back,
+.value,
+.box-title {
     font-family: 'Mont-SemiBold', 'sans-serif', 'Arial';
 }
 
@@ -107,7 +120,7 @@ main h2 {
 .columns {
     display: flex;
     flex-wrap: wrap;
-    margin: 0 0 4.427vw;
+    margin: 0 0 2.5vw;
     gap: 10%;
 }
 
@@ -236,8 +249,7 @@ g:hover .coat {
 
 .elem-container {
     display: flex;
-    height: 160px;
-    align-items: end;
+    align-items: start;
 }
 
 .icons {
@@ -310,7 +322,8 @@ g:hover .coat {
         gap: 20px 5%;
     }
 
-    .value, #title {
+    .value,
+    #title {
         font-size: 16px;
     }
 
@@ -328,19 +341,23 @@ g:hover .coat {
 @media (max-width: 758px) {
 
     .column:nth-child(2) {
-        order: 1; /* Порядок 4-го блока изменяется на 2 */
+        order: 1;
+        /* Порядок 4-го блока изменяется на 2 */
     }
 
     .column:nth-child(3) {
-        order: 2; /* Порядок 4-го блока изменяется на 2 */
+        order: 2;
+        /* Порядок 4-го блока изменяется на 2 */
     }
 
     .column:nth-child(5) {
-        order: 1; /* Порядок 4-го блока изменяется на 2 */
+        order: 1;
+        /* Порядок 4-го блока изменяется на 2 */
     }
 
     .column:nth-child(6) {
-        order: 2; /* Порядок 4-го блока изменяется на 2 */
+        order: 2;
+        /* Порядок 4-го блока изменяется на 2 */
     }
 
     .info {
@@ -399,7 +416,8 @@ g:hover .coat {
         margin-top: 25px;
     }
 
-    .value, #title {
+    .value,
+    #title {
         font-size: 12px;
     }
 
