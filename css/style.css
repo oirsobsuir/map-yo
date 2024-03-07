@@ -120,7 +120,7 @@ main h2 {
 .columns {
     display: flex;
     flex-wrap: wrap;
-    margin: 0 0 2.5vw;
+    margin-bottom: 50px;
     gap: 10%;
 }
 
@@ -254,7 +254,6 @@ g:hover .coat {
 
 .icons {
     max-width: 45px;
-    max-height: 45px;
 }
 
 .copyright {
@@ -301,14 +300,6 @@ g:hover .coat {
 
     .logo {
         margin-left: 0;
-    }
-
-    .columns {
-        margin: 0 0 4.427vw;
-    }
-
-    .elem-container {
-        height: 160px;
     }
 
     .box {
@@ -365,7 +356,7 @@ g:hover .coat {
     }
 
     .icons {
-        max-width: 35px;
+        max-width: none;
         max-height: 35px;
     }
 
@@ -409,6 +400,7 @@ g:hover .coat {
     .columns {
         gap: 4%;
         justify-content: center;
+        margin-bottom: 25px;
     }
 
     .column {
@@ -425,10 +417,6 @@ g:hover .coat {
         max-width: 180px;
         max-height: 100px;
         padding: 5px 8px;
-    }
-
-    .elem-container {
-        height: 100px;
     }
 
     .back {
