@@ -248,6 +248,7 @@ g:hover .coat {
 }
 
 .elem-container {
+    height: 150px;
     display: flex;
     align-items: start;
 }
@@ -261,7 +262,7 @@ g:hover .coat {
 }
 
 .footer {
-    padding-bottom: 20px;
+    padding: 20px 0 6px;
     text-align: center;
 }
 
@@ -309,6 +310,10 @@ g:hover .coat {
         margin-right: auto;
     }
 
+    .elem-container {
+        height: 90px;
+    }
+
     .value-container {
         gap: 20px 5%;
     }
@@ -327,6 +332,9 @@ g:hover .coat {
         max-height: 25px;
     }
 
+    .footer {
+        padding: 15px 0 3px;
+    }
 }
 
 @media (max-width: 758px) {
@@ -358,6 +366,10 @@ g:hover .coat {
     .icons {
         max-width: none;
         max-height: 35px;
+    }
+
+    .elem-container {
+        height: 80px;
     }
 
     .d-flex {
@@ -435,7 +447,7 @@ g:hover .coat {
     }
 
     .footer {
-        padding-bottom: 5px;
+        padding: 10px 0 0;
         font-size: 12px;
     }
 }
