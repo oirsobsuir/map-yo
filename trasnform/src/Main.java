@@ -120,7 +120,11 @@ public class Main {
                 for (int i = 0; i < arrayOblName.length; i++) {
                     Obls obl = new Obls();
                     obl.id = String.valueOf(i + 1);
-                    obl.name = arrayOblName[i];
+                    if (i == arrayOblName.length - 1) {
+                        obl.name = arrayOblName[i].substring(arrayOblName[i].indexOf(" ")+1, arrayOblName[i].length());
+                    } else {
+                        obl.name = arrayOblName[i];
+                    }
                     String temp = arrayOblName[i].substring(0, arrayOblName[i].length() - 2);
                     String temp2 = "ИТОГО по " + temp + "ой области";
                     if (i == arrayOblName.length - 1) {
@@ -248,11 +252,16 @@ public class Main {
                         writeToLog(logWriter, "DataFile is recreated! " + dir + dataFileName);
                     }*/
                     //write content
-                    FileWriter dataWriter = new FileWriter(file);
+                    FileOutputStream fos = new FileOutputStream(file);
+                    Charset utf8 = Charset.forName("UTF-8");
+                    OutputStreamWriter osw = new OutputStreamWriter(fos, utf8);
+                    //BufferedReader br = new BufferedReader(osw);
+
+                    //FileWriter dataWriter = new FileWriter(osw);
                     writeToLog(logWriter, "DataFile is created! " + dir + dataFileName);
-                    dataWriter.write(g.toJson(republic, new TypeToken<Republic>() {
+                    osw.write(g.toJson(republic, new TypeToken<Republic>() {
                     }.getType()));
-                    dataWriter.close();
+                    osw.close();
                 } catch (IOException ex) {
                     //System.out.println("Ошибка записи данных в файл " + dir + dataFileName);
                     writeToLog(logWriter, "Ошибка записи данных в файл " + dir + dataFileName);
