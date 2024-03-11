@@ -84,7 +84,7 @@ header {
 }
 
 .logo img {
-    margin-right: 0.78125vw;
+    margin-right: 15px;
 }
 
 header .title {
@@ -106,13 +106,13 @@ main {
     text-align: center;
 }
 
-main h1 {
+.titles h1 {
     font-size: 36px;
     margin-top: 30px;
 }
 
-main h2 {
-    margin-top: 1.8vw;
+.titles h2 {
+    margin: 40px 0 25px;
 }
 
 /* Колонки */
@@ -121,18 +121,17 @@ main h2 {
     display: flex;
     flex-wrap: wrap;
     margin-bottom: 50px;
-    gap: 10%;
+    gap: 50px 10%;
 }
 
 .columns hr {
-    margin-bottom: 0.52vw;
+    margin: 5px 0;
     width: 60%;
     background-color: var(--grey);
 }
 
 .column {
     flex-basis: 26.66%;
-    margin-top: 50px;
 }
 
 .number {
@@ -243,7 +242,6 @@ g:hover .coat {
 .info {
     display: flex;
     gap: 20px;
-    margin-bottom: 5px;
     align-items: center;
 }
 
@@ -287,11 +285,12 @@ g:hover .coat {
         font-size: 16px;
     }
 
-    main h1 {
+    .titles h1 {
         font-size: 26px;
     }
 
-    main h2 {
+    .titles h2 {
+        margin: 35px 0 20px;
         font-size: 20px;
     }
 
@@ -408,23 +407,23 @@ g:hover .coat {
         margin: 4.19vw 4.19vw 6.69vw;
     }
 
-    main h1 {
+    .titles h1 {
         font-size: 17px;
     }
 
-    main h2 {
+    .titles h2 {
+        margin: 30px 0 15px;
         font-size: 15px;
     }
 
     .columns {
-        gap: 4%;
+        gap: 25px 4%;
         justify-content: center;
         margin-bottom: 25px;
     }
 
     .column {
         flex-basis: 45%;
-        margin-top: 25px;
     }
 
     .value,
