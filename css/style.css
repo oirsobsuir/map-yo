@@ -248,9 +248,9 @@ g:hover .coat {
 }
 
 .elem-container {
-    height: 150px;
+    height: 80px;
     display: flex;
-    align-items: start;
+    align-items: end;
 }
 
 .icons {
@@ -264,6 +264,12 @@ g:hover .coat {
 .footer {
     padding: 20px 0 6px;
     text-align: center;
+}
+
+@media (max-width: 1600px) {
+    .elem-container {
+        height: 140px;
+    }
 }
 
 @media (max-width: 1402px) {
@@ -303,6 +309,16 @@ g:hover .coat {
         margin-left: 0;
     }
 
+    .footer {
+        padding: 15px 0 3px;
+    }
+}
+
+@media (max-width: 1200px) {
+    .elem-container {
+        height: 90px;
+    }
+
     .box {
         max-width: 260px;
         max-height: 160px;
@@ -310,17 +326,13 @@ g:hover .coat {
         margin-right: auto;
     }
 
-    .elem-container {
-        height: 90px;
+    .value,
+    #title {
+        font-size: 16px;
     }
 
     .value-container {
         gap: 20px 5%;
-    }
-
-    .value,
-    #title {
-        font-size: 16px;
     }
 
     .value-item {
@@ -330,10 +342,6 @@ g:hover .coat {
     .value-item img {
         max-width: 25px;
         max-height: 25px;
-    }
-
-    .footer {
-        padding: 15px 0 3px;
     }
 }
 
