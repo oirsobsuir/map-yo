@@ -346,7 +346,6 @@ g:hover .coat {
 }
 
 @media (max-width: 758px) {
-
     .column:nth-child(2) {
         order: 1;
         /* Порядок 4-го блока изменяется на 2 */
@@ -377,7 +376,7 @@ g:hover .coat {
     }
 
     .elem-container {
-        height: 80px;
+        height: 70px;
     }
 
     .d-flex {
@@ -457,5 +456,11 @@ g:hover .coat {
     .footer {
         padding: 10px 0 0;
         font-size: 12px;
+    }
+}
+
+@media (max-width: 500) {
+    .elem-container {
+        height: 70px;
     }
 }
